@@ -5,6 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/Color-Generator/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Generator</title>
+    <script>
+      // Handle GitHub Pages SPA routing
+      if (window.location.search.startsWith('?/')) {
+        const path = window.location.search.slice(2);
+        window.history.replaceState(null, '', path);
+      }
+    </script>
     <script src="/Color-Generator/assets/index-BON7iF56.js"></script>
   </head>
   <body>
